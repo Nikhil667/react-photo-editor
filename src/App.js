@@ -99,9 +99,11 @@ function App() {
     return { filter: filters.join(' ') }
   }
 
+  const getImage = {backgroundImage: "url('https://images.unsplash.com/photo-1620553967922-f3ca60bbc1ea?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80')"};
+
   return (
     <div className="container">
-      <div className="main-image" style={getImageStyle()}></div>
+      <div className="main-image" style={Object.assign(getImageStyle(), getImage)}></div>
       <div className="sidebar">
         {options.map((ele, index) => {
           return (
