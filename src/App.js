@@ -119,8 +119,6 @@ function App() {
     link.click();
   };
 
-  console.log(domEl)
-
   return (
     <div className="container">
       <div

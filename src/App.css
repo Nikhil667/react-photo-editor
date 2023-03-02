@@ -1,3 +1,8 @@
+:root{
+    --base-color: 216;
+    --secondary-color: 240;
+}
+
 *, *::after, *::before{
     box-sizing: border-box;
 }
@@ -29,8 +34,8 @@ body{
 
 .sidebar{
     grid-area: sidebar;
-    background-color: hsl(265, 100%, 86%);
-    border-left: 1px solid hsl(265, 100%, 56%);
+    background-color: hsl(var(--base-color), 100%, 62%);
+    border-left: 1px solid hsl(var(--base-color), 100%, 56%);
     display: flex;
     flex-direction: column;
     align-items: stretch;
@@ -40,18 +45,18 @@ body{
     cursor: pointer;
     border: none;
     outline: none;
-    background-color: hsl(265, 100%, 86%);
+    background-color: hsl(var(--base-color), 100%, 86%);
     padding: 1rem;
     position: relative;
     transition: background-color 150ms;
 }
 
 .sidebar-item:hover, .sidebar-item:focus, input::file-selector-button:hover{
-    background-color: hsl(265, 100%, 76%);
+    background-color: hsl(var(--base-color), 100%, 76%);
 }
 
 .sidebar-item.active{
-    background-color: hsl(265, 100%, 70%);;
+    background-color: hsl(var(--base-color), 100%, 70%);;
 }
 
 .sidebar-item:after{
@@ -61,7 +66,7 @@ body{
     left: 10%;
     bottom: 0;
     height: 1px;
-    background-color: hsl(265, 100%, 46%);
+    background-color: hsl(var(--base-color), 100%, 46%);
 }
 
 .sidebar-item:last-child::after{
@@ -97,17 +102,17 @@ input::file-selector-button, .btn{
 }
 
 input::file-selector-button{
-    border: 1px solid hsl(265, 100%, 46%);
-    background-color: hsl(265, 100%, 86%);
+    border: 1px solid hsl(var(--base-color), 100%, 46%);
+    background-color: hsl(var(--base-color), 100%, 86%);
     font-family: inherit;
 }
 
 .btn{
-    border: 1px solid hsl(202, 100%, 11%);
-    background-color: hsl(202, 100%, 31%);
+    border: 1px solid hsl(var(--secondary-color), 100%, 64%);
+    background-color: hsl(var(--secondary-color), 100%, 61%);
     color: white;
 }
 
 .btn:hover{
-    background-color: hsl(202, 100%, 26%);
+    background-color: hsl(var(--secondary-color), 100%, 51%);
 }

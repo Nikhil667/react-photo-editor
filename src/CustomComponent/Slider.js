@@ -15,7 +15,7 @@ export default function Slider({ min, max, value, handleChange, handleImage, dow
           onClick={downloadImage}
           className="btn"
           >
-            Download
+            Download Image
         </button>
       </div>
       <input 
